@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
   padding-bottom: 80px;
 }
 
+/* Menu fixo */
 header {
   position: fixed;
   top: 0;
@@ -40,6 +42,7 @@ nav ul li a.active {
   transform: scale(1.1);
 }
 
+/* Main */
 main {
   max-width: 1000px;
   margin: 130px auto 50px auto;
@@ -58,41 +61,43 @@ p {
   line-height: 1.7;
 }
 
+/* Highlight para textos */
 .highlight {
   color: #ff7f50;
   font-weight: bold;
 }
 .info-list {
-  list-style: none; 
-  background-color: rgba(255, 255, 255, 0.05); 
-  border-left: 4px solid #00bfff; 
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00bfff;
   border-radius: 8px;
   padding: 20px 25px;
   margin: 20px auto;
   max-width: 700px;
   color: #f5f5f5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.8; 
+  line-height: 1.8;
 }
 
 .info-list li {
-  margin-bottom: 15px; 
-  text-align: justify; 
+  margin-bottom: 15px;
+  text-align: justify;
 }
 .info-list li strong {
-  COLOR:#00bfff; 
+  color: #00bfff;
 }
 
-.info-list li p{
-    color: #1e1e1e;
+.info-list li p {
+  color: #1e1e1e;
 }
 
-.main-contacts p{
-text-align: center;
-font-weight: bold;
-font-size: 20px;
+.main-contacts p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
+/* Links sociais */
 .social-links {
   display: flex;
   justify-content: center;
@@ -111,6 +116,7 @@ font-size: 20px;
   transform: scale(1.1);
 }
 
+/* Portfolio cards */
 .portfolio-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -147,6 +153,7 @@ font-size: 20px;
   transform: scale(1.05);
 }
 
+/* Formulário */
 form {
   background: linear-gradient(145deg, #ffffff, #e6f0ff);
   padding: 30px;
@@ -195,6 +202,7 @@ form button:hover {
   transform: scale(1.05);
 }
 
+/* Rodapé */
 footer {
   position: fixed;
   bottom: 0;
@@ -223,6 +231,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Animações */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -234,6 +243,7 @@ footer a:hover {
   }
 }
 
+/* Responsividade */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
