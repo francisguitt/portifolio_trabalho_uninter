@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francis Guitt - Contato</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-contacts">
+      <h1>Contato</h1>
+      <p>Entre em contato comigo através do formulário abaixo:</p>
+
+      <form id="contactForm">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seu e-mail"
+          required
+        />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="5"
+          placeholder="Digite sua mensagem..."
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p id="copy"></p>
+      <p>
+        Conecte-se comigo no
+        <a href="https://www.linkedin.com/in/francis-guitt-83bb3a1b8/" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Mensagem enviada com sucesso! Obrigado, " +
+              document.getElementById("nome").value +
+              "."
+          );
+        });
+
+      document.getElementById(
+        "copy"
+      ).innerHTML = `francisgitt &copy; ${new Date().getFullYear()} - todos os direitos reservados`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francis Guitt - Portfólio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html" class="active">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Portfólio</h1>
+      <p>Confira alguns projetos e conteúdos que desenvolvi:</p>
+
+      <div class="portfolio-cards">
+        <div class="card">
+          <h2>Canal Guitt Web Code</h2>
+          <p>
+            Ensino programação e tecnologia de forma prática e didática no
+            YouTube.
+          </p>
+          <a
+            href="https://youtube.com/@guitt-web-code?si=TnUDCj_6jDTD4vO3"
+            target="_blank"
+            >Visitar canal</a
+          >
+        </div>
+
+        <div class="card">
+          <h2>GitHub - FrancisGuitt</h2>
+          <p>Projetos em HTML, CSS, JavaScript e outras tecnologias</p>
+          <a href="https://github.com/FrancisGuitt" target="_blank"
+            >Ver GitHub</a
+          >
+        </div>
+
+        <div class="card">
+          <h2>LinkedIn</h2>
+          <p>
+            Perfil profissional completo com experiência, projetos e networking.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/francis-guitt-83bb3a1b8/"
+            target="_blank"
+            >Visitar LinkedIn</a
+          >
+        </div>
+
+        <div class="card">
+          <h2>Instagram</h2>
+          <p> Perfil profissional com  projetos e networking.</p>
+          <a href="https://www.instagram.com/guittzoom" target="_blank"
+            >Ver Instagram</a
+          >
+        </div>
+
+        <div class="card">
+          <h2>Projetos ADS</h2>
+          <p>
+            Sites, sistemas web e aplicativos desenvolvidos durante o curso.
+            <a href="#" target="_blank"
+            >Clique aqui</a
+          >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p id="copy"></p>
+      <p>
+        Conecte-se comigo no
+        <a href="https://www.linkedin.com/in/francis-guitt-83bb3a1b8/" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById(
+        "copy"
+      ).innerHTML = `francisgitt &copy; ${new Date().getFullYear()} - todos os direitos reservados`;
+    </script>
+  </body>
+</html>
